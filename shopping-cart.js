@@ -14,7 +14,6 @@ const countTheSumPrice = function () { // 4
 	productsInCart.forEach(item => {
 		sum += item.price;
 	});
-	console.log(sum)
 	return sum;
 
 }
