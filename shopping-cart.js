@@ -14,15 +14,15 @@ const countTheSumPrice = function () { // 4
 	productsInCart.forEach(item => {
 		sum += item.price;
 	});
+	console.log(sum)
 	return sum;
+
 }
 
 const updateShoppingCartHTML = function () {  // 3
 	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {
-
-
-		let result = productsInCart.map((product, index) => {
+		let result = productsInCart.map(product => {
 			return `
 				<li class="buyItem">
 					<img src="${product.image}">
@@ -49,7 +49,7 @@ const updateShoppingCartHTML = function () {  // 3
 		parentElement.innerHTML = '<h4 class="empty">ваша корзина пуста</h4>';
 		cartSumPrice.innerHTML = '';
 		cartSumPrice2.innerHTML = '';
-		cartSumPrice3.innerHTML = '';
+
 	}
 }
 
