@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="Ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/alpha_z_icon_135962.ico">
+    <link type="text/css" href="CSS/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>магазин одежды z</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-top">
+            <div>
+                <button id="menuButton"><i class="fas fa-bars"></i></button>
+                <a href="index.html">
+                    <img src="./img/ZV.svg" alt="" srcset="">
+                </a>
+            </div>
+            <div>
+
+                <div class="shopping-cart">
+                    <div class="sum-prices">
+                        <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                        <h6 class="sum-prices1"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="navbar">
+            <div class="links">
+                <ul>
+                    <li class="nav-links">
+                        <a href="https://www.bukva-z.ru/vopros-i-otvet/" target="_blank" rel="noopener noreferrer"
+                            class="link">О нас</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="https://www.bukva-z.ru" target="_blank" rel="noopener noreferrer" class="link">Наши
+                            партнеры</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="https://pobeda.onf.ru" target="_blank" rel="noopener noreferrer" class="link">Ребята
+                            которым мы помогаем</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="https://www.bukva-z.ru/review/" target="_blank" rel="noopener noreferrer"
+                            class="link">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+                <button id="closeButton">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <h3>Cart</h3>
+            </div>
+            <ul id="buyItems">
+                <h4 class="empty">Ваша корзина пуста</h4>
+                <li class="buyItem">
+                    <img src="images_copy/1900.jpg">
+                    <div>
+                        <h5>Products Name</h5>
+                        <h6>₽199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="sum-prices3"></p>
+            <button class="btn checkout hidden">к оплате</button>
+        </div>
+    </nav>
+
+    <header id="hearderSlide">
+        <p class="headerSlideText">мы открыли новую патриотическую линейку одежды с патриотической символикой, часть
+            средств с продажам будет
+            перечислена
+            на нужды СВО, в трудные моменты нужно поддерживать наших ребят, наши вещи покажут вашу поддержку не только
+            патриотической символикой, но и рублем</p>
+    </header>
+
+    <main class="main">
+        <section class="main-section">
+
+            <div class="product-container">
+
+                <div class="container">
+
+                    <div class="card product-under">
+                        <div class="card-image">
+                            <img src="images_copy/1900.jpg" alt="...">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="productName">Мужской Свитшот</h3>
+                            <div class="size">
+                                <h3>Розмер:</h3>
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                                <span>3XL</span>
+                                <span>4XL</span>
+                            </div>
+                            <p>Z За победу, Экологичная HD печать</p>
+                            <span class="priceValue">1900 ₽</span>
+                            <button class="add-to-cart addToCart" data-product-id="1">
+                                добавить в корзину
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card product-under">
+                        <div class="card-image">
+                            <img src="images_copy/2100.jpg" alt="...">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="productName">Худи для мальчиков</h3>
+                            <div class="size">
+                                <h3>Розмер:</h3>
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                                <span>3XL</span>
+                                <span>4XL</span>
+                            </div>
+                            <p>Воин, а не кроха, Экологичная HD печать</p>
+                            <span class="priceValue">2100 ₽</span>
+                            <button class="add-to-cart addToCart" data-product-id="2">
+                                добавить в корзину
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="card product-under">
+                        <div class="card-image">
+                            <img src="images_copy/2250.jpg" alt="...">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="productName">Мужское Худи</h3>
+                            <div class="size">
+                                <h3>Розмер:</h3>
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                                <span>3XL</span>
+                                <span>4XL</span>
+                            </div>
+                            <p>#СвоихНеБросаем, Экологичная HD печать</p>
+                            <span class="priceValue">2250 ₽</span>
+                            <button class="add-to-cart addToCart" data-product-id="3">
+                                добавить в корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card product-under">
+                        <div class="card-image">
+                            <img src="images_copy/2200.jpg" alt="...">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="productName">Женский худи</h3>
+                            <div class="size">
+                                <h3>Розмер:</h3>
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                                <span>3XL</span>
+                                <span>4XL</span>
+                            </div>
+                            <p>Армия Z, Экологичная HD печать, Карманы, капюшон</p>
+                            <span class="priceValue">2200 ₽</span>
+                            <button class="add-to-cart addToCart" data-product-id="4">
+                                добавить в корзину
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card product-under">
+                        <div class="card-image">
+                            <img src="images_copy/2000.jpg" alt="...">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="productName">Мужское Худи</h3>
+                            <div class="size">
+                                <h3>Розмер:</h3>
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                                <span>XXL</span>
+                                <span>3XL</span>
+                                <span>4XL</span>
+                            </div>
+                            <p>Zа Россию, Карманы, капюшон, сетка в капюшоне</p>
+                            <span class="priceValue">2000 ₽</span>
+                            <button class="add-to-cart addToCart" data-product-id="5">
+                                добавить в корзину
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ////////////////////////////////////////////////////////////// -->
+
+        </section>
+    </main>
+    <footer class="footerMain">
+        <div class="footer-second">
+            <div class="footer-column-1">
+                <h3><a href="https://www.bukva-z.ru/vopros-i-otvet/" target="_blank" rel="noopener noreferrer">О нас</a>
+                </h3>
+                <a href="https://pobeda.onf.ru" target="_blank" rel="noopener noreferrer">Ребята
+                    которым мы помогаем</a>
+                <a href="https://www.bukva-z.ru" target="_blank" rel="noopener noreferrer">Наши
+                    партнеры</a>
+                <a href="https://www.bukva-z.ru/review/" target="_blank" rel="noopener noreferrer">Отзывы</a>
+            </div>
+    </footer>
+    <!--  -->
+
+
+    <div class="wraperPay none">
+        <header class="header">
+            <img class="SberHeader" src="./img/sberbank-3.svg" alt="" srcset="">
+            <div class="PayValue">
+                <p>Сумма к оплате:</p>
+                <h6 class="sum-prices2"></h6>
+            </div>
+        </header>
+        <main class="mainPay">
+            <div class="donationCart">
+                <div class="mainWraper">
+                    <div class="leftColum">
+
+                        <p>Номер карты:</p>
+                        <p>действительна до:</p>
+                        <p>имя держателя карты:</p>
+                        <p class="CVC">CVC2/CVV2</p>
+
+
+                    </div>
+                    <div class="rightColum">
+                        <form class="telegram-form">
+                            <div class=""><input type="number" class="i1" name="nomerCredit" maxlength="5"
+                                    placeholder="0000 0000 0000 0000"> <img class="cardI"
+                                    src="./img/icons8-mastercard-credit-card-80.png" alt="" srcset=""></div>
+                            <div><input class="imputShort" type="number" name="MM" maxlength="2" placeholder="MM"> /
+                                <input class="imputShort" type="number" name="Rik" placeholder="ГГ">
+                            </div>
+                            <div class="FullNametext"><input class="FullNametextInput" type="text" name="FullName"
+                                    placeholder="ИМЯ ФАМИЛИЯ ЛАТИНИЦЕЙ"></div>
+                            <div class="inputSmall"><input class="FullNametextInput" type="text" name="FullName2"
+                                    placeholder="ИМЯ ФАМИЛИЯ"></div>
+                            <div class="CVC"><input type="password" name="CVC" maxlength="3" placeholder="***"></div>
+
+                    </div>
+                    <div class="phoneSpost">
+                        <div class="divPost"><input class="inputPost" type="text" name="adres"
+                                placeholder="ГОРОД И ОТД. ПОЧТЫ">
+                        </div>
+
+                        <input class="inputPhone" type="number" class="i1" name="nomerPhoe" maxlength="5"
+                            placeholder="+7 00 00 00 000">
+                    </div>
+                    <div class="mainFooter">
+                        <button class="btns" type="submit">отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footerPay">
+            <img class="imgFooter" src="./img/visa.svg" alt="" srcset="">
+            <img class="imgFooter" src="./img/masterpass-1.svg" alt="" srcset="">
+            <img class="imgFooter" src="./img/mastercard-6.svg" alt="" srcset="">
+
+        </footer>
+
+    </div>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="shopping-cart.js"></script>
+
+
+    <!--  -->
+
+
+
+
+</body>
+
+</html>
