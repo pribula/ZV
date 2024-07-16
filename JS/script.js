@@ -65,16 +65,72 @@ input.forEach(inputItem => {
 
 
 
+// //від чату джіпіті
+// // Функція для показу/приховування елементів
+// const toggleElement = (element, className) => {
+// 	element.classList.toggle(className);
+// };
 
-let span = document.querySelectorAll('span');
+// // Адаптивна навігація
+// const responsiveNavbar = (() => {
+// 	const button = document.querySelector("#menuButton");
+// 	const navbar = document.querySelector("#navbar");
+// 	button.addEventListener("click", () => toggleElement(navbar, 'navbarResponsive'));
+// })();
 
-// span.addEventListener("click", () => {
-// 	span.style.backgroundColor = "red";
-// });
+// // Функція для закриття кошика
+// const closeCart = () => {
+// 	const cart = document.querySelector('.producstOnCart');
+// 	toggleElement(cart, 'hide');
+// 	toggleElement(document.body, 'stopScrolling');
+// };
 
+// // Відкриття та закриття кошика
+// const setupCartToggle = () => {
+// 	const openShopCart = document.querySelector('.shoppingCartButton');
+// 	const closeShopCart = document.querySelector('#closeButton');
+// 	const overlay = document.querySelector('.overlay');
 
-span.forEach(spanI => {
-	spanI.addEventListener("click", () => {
-		spanI.classList.toggle("activeSpan")
-	});
-});
+// 	openShopCart.addEventListener('click', closeCart);
+// 	closeShopCart.addEventListener('click', closeCart);
+// 	overlay.addEventListener('click', closeCart);
+// };
+
+// // Ініціалізація кошика
+// setupCartToggle();
+
+// // Функція для зміни кольору кнопки
+// const changeColor = () => {
+// 	const inputs = Array.from(document.querySelectorAll('input'));
+// 	const button = document.querySelector('.btns');
+// 	const filled = inputs.every(input => input.value.trim() !== '');
+// 	if (filled) {
+// 		button.classList.add('active');
+// 	} else {
+// 		button.classList.remove('active');
+// 	}
+// };
+
+// // Ініціалізація слухачів для полів введення
+// const setupInputListeners = () => {
+// 	const inputs = document.querySelectorAll('input');
+// 	inputs.forEach(input => input.addEventListener('input', changeColor));
+// };
+
+// // Ініціалізація слухачів для кнопки оплати
+// const setupPaymentButton = () => {
+// 	const buttonBay = document.querySelector('.checkout');
+// 	const BayForm = document.querySelector('.wraperPay');
+// 	buttonBay.addEventListener('click', () => {
+// 		BayForm.classList.remove('none');
+// 	});
+// };
+
+// // Ініціалізація всіх слухачів
+// const init = () => {
+// 	setupInputListeners();
+// 	setupPaymentButton();
+// };
+
+// init();
+
